@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shravya</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/66218bdeec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+    <img src="images/logo.jpeg" class="logo">
+    <ul>
+    <li><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+    </ul>
+    
+    </nav>
+    <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hi,I'm <span>Shravya</span></h1>
+        </div>
+    </div>
+    </div>
+    <div id="about">
+        <div id="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/3.jpeg" alt="puc">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seeking an opportunity to utilize skills and abilities in the Information Technology <br>Industry that offers professional
+                        growth being resourceful, innovative and flexible. Starting level position for Software Development.</p>
+                       <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing Language</span><br>Java,J2EE</li>
+                        <li><span>DataBase</span><br>MySQL</li>
+                        <li><span>Web Technologies</span><br>HTML,CSS,JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span></li>
+                        <p>As a recent graduate, I'm eager to apply my skills and knowledge in a real-world setting
+                             and collaborate with a dynamic team. Although I don't have direct professional experience, 
+                             I'm a quick learner and thrive in environments where I can absorb and contribute to innovative projects. 
+                             My portfolio showcases some of my notable work, demonstrating my capabilities and potential.
+                              Additionally, I've completed a comprehensive Java Full Stack Course from Pentagon Space, 
+                              equipping me with a solid foundation in Java development. I'm excited to leverage my skills 
+                              and enthusiasm to make a meaningful impact in a professional setting.</p>    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Rajarajeswari College of Engineering,Bangalore</li>
+                        <li><span>2019</span><br>Vivike Per-University,Kota</li>
+                        <li><span>2017</span><br>Government High School,Manur</li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!--------Portfolio-------->
+   
+    <div id="portfolio">
+        <div class="projects">
+            <h1 class="sub-title">My Work</h1>
+            <div class="project">
+                <div class="work">
+                    <img src="images/App1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Banking</h3>
+                        <p>This gives user friendly interface
+                             for banking application</p>
+                             <a href="https://github.com/Shravya-S/JavaFullStack-Project"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/App2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Rock Paper Scissor Game</h3>
+                        <p>To show the basic Knowledge about Web Technologies</p>
+                             <a href="https://github.com/Shravya-S/RockPaperScissor-Game"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Student Result Management</h3>
+                        <p>This gives user friendly interface
+                             for Students for checking results.</p>
+                             <a href="https://github.com/Shravya-S/StudentResultApp"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+<div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>&nbsp shravyakome18@gmail.com</p>
+                <p><i class="fa-solid fa-phone" ></i>&nbsp 8431165792</p>
+                <div class="social-icons">
+                    <br>
+                    <a href="https://www.instagram.com/shravya_s.__/?hl=en"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/shravya-sudhakar-770708256
+                    "><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                </div>
+                <a href="images/Shravya_Resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" id="" placeholder="Your Name" required>
+                <input type="email" name="Email" id="" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <p style="color:#fff ;">Click Once</p>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+        </div>
+</div>
+
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 1
+        }
+         </script>
+         <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbz-eAItpAMjMJCBu6QJYnEW78eY4sdc1PC2nTK81DqYYfBTO4JIeWYAYWxKyFZOBjj8/exec"
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    
+    </body>
+</html>
